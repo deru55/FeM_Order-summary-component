@@ -31,7 +31,7 @@ body {
   background-image: url(images/pattern-background-mobile.svg);
   background-size: cover;
   background-repeat: no-repeat;
-  line-height: 1.6rem;
+  line-height: 1.6;
   color: var(--clr-neutral-2);
   text-align: center;
 }
@@ -49,63 +49,73 @@ img {
   max-width: 25rem;
 }
 
-.card-details {
+.card-content {
   padding: 1.7rem;
 }
 
-.flex-flow {
-  display: flex;
-  flex-direction: column;
+.grid-flow {
+  display: grid;
   gap: 1rem;
 }
 
 .card-title {
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   color: var(--clr-neutral-3);
   font-weight: var(--fw-900);
 }
 
-.flex-group {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 1rem;
-}
-
-.subscription-plan {
+.card-plan {
   background-color: var(--clr-neutral-1);
+  border-radius: 0.5rem;
   padding: 1rem;
-  border-radius: 1rem;
-  font-size: 0.9rem;
+  text-align: left;
+  font-size: 0.85rem;
 }
 
-.subscription-type {
-  color: var(--clr-neutral-3);
+.flex-row {
+  display: flex;
+  gap: 0.8rem;
+}
+
+.link {
+  margin-left: auto;
+  border: 0;
+  background-color: transparent;
+  text-decoration: underline;
+  color: var(--clr-primary-2);
+  cursor: pointer;
+}
+
+.fw-bold {
   font-weight: var(--fw-900);
+  color: var(--clr-neutral-3);
 }
 
 .button {
   border: 0;
-  padding: 0.725rem;
-  border-radius: 0.7rem;
-  background-color: white;
+  background-color: transparent;
+  color: var(--clr-neutral-2);
   cursor: pointer;
   font-weight: var(--fw-700);
-  color: inherit;
 }
 
 .btn-proceed {
   background-color: var(--clr-primary-2);
+  padding: 0.5rem;
+  border-radius: 0.5rem;
   color: white;
 }
 
+.link:hover,
+link:focus,
 .btn-proceed:hover,
-a:hover {
+.btn-proceed:focus {
   opacity: 0.5;
 }
 
-.btn-cancel:hover {
-  color: black;
+.btn-cancel:hover,
+.btn-cancel:focus {
+  color: var(--clr-neutral-3);
 }
 
 @media screen and (min-width: 769px) {
@@ -113,16 +123,7 @@ a:hover {
     background-image: url(images/pattern-background-desktop.svg);
   }
 
-  .card-details {
-    padding: 2.5rem;
-  }
-
-  .button {
-    font-size: 0.875rem;
-  }
-
   .card-title {
     font-size: 1.725rem;
   }
-
 }
