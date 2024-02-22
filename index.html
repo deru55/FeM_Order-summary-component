@@ -8,30 +8,28 @@
   </head>
   <body>
     <main>
-      <div class="card-container">
-        <img
-          src="images/illustration-hero.svg"
-          alt="Hero illustration"
-          class="card-image"
-        />
-        <div class="card-content grid-flow">
-          <h2 class="card-title">Order Summary</h2>
+      <div class="card">
+        <img src="images/illustration-hero.svg" alt="" />
+        <div class="card__content | flow">
+          <h2 class="card__content__title">Order Summary</h2>
           <p>
             You can now listen to millions of songs, audiobooks and podcast on
             any device anywhere you like!
           </p>
-          <div class="card-plan flex-row">
-            <div>
+          <div class="card__content__plan">
+            <div class="flex-group">
               <img src="images/icon-music.svg" alt="" />
+              <div>
+                <p class="fw-bold text-neutral-3">Annual Plan</p>
+                <p>$59.99/year</p>
+              </div>
             </div>
-            <div>
-              <p class="fw-bold">Annual Plan</p>
-              <p>$59.99/year</p>
-            </div>
-            <button class="link">Change</button>
+            <a class="fs-300" href="#">Change</a>
           </div>
-          <button class="button btn-proceed">Proceed to Payment</button>
-          <button class="button btn-cancel">Cancel Order</button>
+          <div class="card__button__group">
+            <button class="button button--proceed">Proceed to Payment</button>
+            <button class="button button--cancel">Cancel Order</button>
+          </div>
         </div>
       </div>
     </main>
